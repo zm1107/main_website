@@ -234,18 +234,15 @@ section h2 {
   font-size: 0.92rem;
 }
 
-.card-soon {
-  border-style: dashed;
-  background: transparent;
-  justify-content: center;
-  align-items: center;
-  min-height: 220px;
-  text-align: center;
+/* 开发中产品卡（富卡片结构，无官网链接） */
+.card-wip { background: var(--surface); }
+
+.card-nolink {
+  margin-top: auto;
+  padding-top: 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
 }
-
-.card-soon .card-name { font-size: 1.15rem; }
-
-.card-soon-text { color: var(--muted); font-size: 0.88rem; padding-top: 4px; }
 
 /* 关于作者 */
 .about-author {

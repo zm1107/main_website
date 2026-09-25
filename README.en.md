@@ -24,7 +24,7 @@ Every piece of software here is built purely out of hobby — turning needs I ru
 | ExifMate |  | Released | <https://exifmate.weibaba.fun> |
 | SourceLens | 源鉴 | Released | <https://sourcelens.weibaba.fun> |
 | ForceSplit |  | Released | <https://forcesplit.weibaba.fun> |
-| FinFlowScope |  | In development | Coming soon |
+| FinFlowScope | 观流 | In development | Coming soon |
 
 Product features and logos are shown on the home page; wording sources are recorded in `docs/site-design.md` D3/D14.
 
