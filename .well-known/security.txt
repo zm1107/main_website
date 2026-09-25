@@ -1,5 +1,4 @@
-# 示例 · 待替换：正式联系方式待用户提供后更新（见 docs/site-design.md 待确认清单）
-Contact: mailto:contact@weibaba.fun
+Contact: mailto:feed@weibaba.fun
 Expires: 2027-09-26T00:00:00.000Z
 Preferred-Languages: zh, en
 Canonical: https://weibaba.fun/.well-known/security.txt

@@ -12,13 +12,13 @@
 
 ## 口径管理
 
-- 各产品名称、简介、链接等口径只能来自用户提供的口径或对应应用仓库的权威文件（README、store/、docs/、PRIVACY.md），禁止凭记忆生成。
-- 当前版本产品链接按全局第 12 条 `<英文项目名小写>.weibaba.fun` 派生；ExifMate 链接待确认（见 `docs/site-design.md` 待确认清单）。
+- 各产品名称、中文名、简介、链接等口径只能来自用户提供的口径或对应应用仓库/网站仓库的权威文件（README、store/、docs/、PRIVACY.md、官网 index.html 的 og 口径），禁止凭记忆生成；当前版本来源记录于 `docs/site-design.md` D3/D13。
 - 任何口径变更先回写 `docs/site-design.md` 再改代码。
 
-## 图标派生
+## 图标与素材
 
-- `favicon.ico`、`favicon.png`、`apple-touch-icon.png`、`assets/img/logo.png`、`assets/img/og.png` 全部由 `tools/make_icons.py` 生成，禁止手工修改图片文件。
+- 图标派生源图为 `tools/src/weblogo.jpg`（用户提供）；`favicon.ico`、`favicon.png`、`apple-touch-icon.png`、`assets/img/logo.png`、`assets/img/og.png` 全部由 `tools/make_icons.py` 生成，禁止手工修改生成的图片。
+- `assets/img/weblogo.jpg`（徽标原图）、`assets/img/weibaba_face.jpg`（作者画像）、`assets/img/donate_qr.jpg`（收款码，取自 justforshow 官网仓）为用户素材，只可整体替换、不得裁改内容。
 
 ## 提交与分支
 

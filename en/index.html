@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Weibaba Software · Product Home</title>
-<meta name="description" content="The home of Weibaba Software products: JustForShow, PassGone, PrivarMask, ExifMate, ForceSplit, SourceLens, and FinFlowScope (in development). Each product has its own official website.">
+<meta name="description" content="The home of Weibaba Software products: JustForShow, PassGone, PrivarMask, ExifMate, SourceLens, plus ForceSplit and FinFlowScope in development. Each product has its own official website.">
 <link rel="canonical" href="https://weibaba.fun/en/">
 <link rel="alternate" hreflang="zh-CN" href="https://weibaba.fun/">
 <link rel="alternate" hreflang="en" href="https://weibaba.fun/en/">
@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta property="og:title" content="Weibaba Software · Product Home">
-<meta property="og:description" content="The home of Weibaba Software products: every product has its own official website.">
+<meta property="og:description" content="Built out of pure hobby — turning everyday needs into small tools. Every product has its own official website.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://weibaba.fun/en/">
 <meta property="og:image" content="https://weibaba.fun/assets/img/og.png">
@@ -36,8 +36,9 @@
 </header>
 <main>
   <section class="hero container">
+    <img class="hero-logo" src="../assets/img/weblogo.jpg" alt="Weibaba Zhang SoftWare emblem" width="150" height="150">
     <h1>Software Portfolio Home</h1>
-    <p class="hero-sub">Every software product developed by Weibaba is gathered here. Each product has its own official website — open a card to learn more and get the app.</p>
+    <p class="hero-sub">Everything here is built purely out of hobby. The idea is simple: turn the needs I run into every day into small tools — hope they help you too.</p>
     <p class="hero-meta">Pure static · Zero tracking · Bilingual (zh/en)</p>
   </section>
   <section class="container" aria-labelledby="products-title">
@@ -46,33 +47,42 @@
       <a class="card" href="https://justforshow.weibaba.fun">
         <span class="badge badge-ok">Released</span>
         <span class="card-name">JustForShow</span>
+        <span class="card-zh">做个样子</span>
+        <span class="card-intro">Batch-extract headers and the first N rows of .xlsx / .xls / .csv into a 1:1 mirrored folder structure — fully offline.</span>
         <span class="card-go">Visit website ↗</span>
       </a>
-      <a class="card" href="https://passgone.weibaba.fun">
+      <a class="card" href="https://passgone.exifmate.com">
         <span class="badge badge-ok">Released</span>
         <span class="card-name">PassGone</span>
+        <span class="card-intro">Fully offline password recovery for Office / PDF / archives, covering 10 formats.</span>
         <span class="card-go">Visit website ↗</span>
       </a>
       <a class="card" href="https://privamask.weibaba.fun">
         <span class="badge badge-ok">Released</span>
         <span class="card-name">PrivaMask</span>
+        <span class="card-zh">数隐通</span>
+        <span class="card-intro">Local data masking for Windows: batch masking for xls / xlsx / csv / doc / docx, masking + fake-data modes, position-level restore, zero upload.</span>
         <span class="card-go">Visit website ↗</span>
       </a>
-      <a class="card" href="https://exifmate.weibaba.fun">
+      <a class="card" href="https://exifmate.com">
         <span class="badge badge-ok">Released</span>
         <span class="card-name">ExifMate</span>
-        <span class="card-go">Visit website ↗</span>
-      </a>
-      <a class="card" href="https://forcesplit.weibaba.fun">
-        <span class="badge badge-ok">Released</span>
-        <span class="card-name">ForceSplit</span>
+        <span class="card-intro">Fully offline photo &amp; video EXIF toolkit: smart templates, parallel writes, one-click snapshot restore.</span>
         <span class="card-go">Visit website ↗</span>
       </a>
       <a class="card" href="https://sourcelens.weibaba.fun">
         <span class="badge badge-ok">Released</span>
         <span class="card-name">SourceLens</span>
+        <span class="card-zh">源鉴</span>
+        <span class="card-intro">Bid document provenance comparison: author-style attribution plus document-fingerprint forensics, every conclusion carries page-level evidence.</span>
         <span class="card-go">Visit website ↗</span>
       </a>
+      <div class="card card-soon">
+        <span class="badge badge-dev">In development</span>
+        <span class="card-name">ForceSplit</span>
+        <span class="card-intro">Split XLS / XLSX / CSV data by province/city, year/month, amount ranges and other business rules — no technical skills required.</span>
+        <span class="card-soon-text">In development · website coming</span>
+      </div>
       <div class="card card-soon">
         <span class="badge badge-dev">In development</span>
         <span class="card-name">FinFlowScope</span>
@@ -80,15 +90,29 @@
       </div>
     </div>
   </section>
-  <section class="container about" aria-labelledby="about-title">
-    <h2 id="about-title">About this site</h2>
-    <p>This is the product home — an entry hub only. For each product's features, release notes, download channels and privacy policy, please visit its official website.</p>
+  <section class="container about-author" aria-labelledby="author-title">
+    <h2 id="author-title">About the Author</h2>
+    <div class="author">
+      <img class="author-avatar" src="../assets/img/weibaba_face.jpg" alt="Author portrait" width="168" height="168">
+      <div class="author-text">
+        <p>Every piece of software here is built purely out of hobby — turning needs I run into all the time into small, handy tools.</p>
+        <p>If one of them helped you, feel free to <a href="#coffee">buy the author a coffee</a>.</p>
+        <p class="contact">Contact &amp; feedback: <a href="mailto:feed@weibaba.fun">feed@weibaba.fun</a> (please mention the product name)</p>
+      </div>
+    </div>
+  </section>
+  <section class="container coffee" id="coffee" aria-labelledby="coffee-title">
+    <h2 id="coffee-title">Buy the Author a Coffee</h2>
+    <div class="coffee-box">
+      <img class="coffee-qr" src="../assets/img/donate_qr.jpg" alt="Buy the author a coffee QR code" width="230" height="313">
+      <p>If a small tool here saved your day, a cup of coffee is the best encouragement ☕</p>
+    </div>
   </section>
 </main>
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© 2026 Weibaba</p>
-    <p><a href="privacy/">Privacy</a> · <a href="../">中文</a></p>
+    <p><a href="mailto:feed@weibaba.fun">feed@weibaba.fun</a> · <a href="privacy/">Privacy</a> · <a href="../">中文</a></p>
   </div>
 </footer>
 </body>
