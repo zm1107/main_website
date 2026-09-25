@@ -23,7 +23,7 @@
 - D7 站点红线（硬性）：纯静态、零追踪——无统计/分析、无任何外部资源请求（无 CDN 字体、外链图片）、无 Cookie、无表单、无服务端代码、无 JavaScript；CSP 通过 `_headers` 全站收紧（README 中的 shields.io 徽章仅存在于 README，不入页面）。
 - D8 提交身份：暂用全局身份 `Weibaba <zm1107@live.com>`；如需主站专属身份待用户提供。
 - D9 联系方式（用户口径）：`feed@weibaba.fun`（请注明产品名称）；用于页脚、关于作者区、隐私页「联系方式」与 `.well-known/security.txt`。
-- D10 请作者喝咖啡（用户口径）：收款码图取自 justforshow 官网仓 `assets/img/donate_qr.jpg`（与 passgone 官网仓同图）；主站设「请作者喝咖啡」区，GitHub README 尾部同步「赞助」区。
+- D10 请作者喝咖啡（用户口径）：收款码取自 justforshow 官网仓 `assets/img/donate_qr.jpg`（与 passgone 官网仓同图）。**弹出式**（用户口径 2026-09-26：不要直接展示，点击弹出图片）：交互参照 PassGone 样式（跳动咖啡按钮 + 点击弹收款码 + 遮罩/✕ 关闭），但以纯 CSS `:target` 弹层实现（`#qr-modal`），保持本仓「无 JavaScript」红线与 CSP 不变；`prefers-reduced-motion` 时停用跳动动画。GitHub README 内无法弹层，仍直接展示收款码。
 - D11 视觉素材（用户提供）：`weblogo.jpg` 为站点徽标源图（1024×1024 白底圆形徽章 + Weibaba Zhang SoftWare 字样，源图存 `tools/src/`），favicon / apple-touch-icon / logo.png / og.png 全部由 `tools/make_icons.py` 从其派生（取徽章区域，禁止手改图片）；`weibaba_face.jpg` 为作者头像（油画风格双人像，含画框，完整展示、不做裁切）。
 - D12 关于作者文案（用户口径扩写）：中文「这些软件都出自个人爱好。开发初衷很简单：日常里经常遇到的小需求，顺手把它们做成小工具。希望它们也能帮到你。」；英文对应翻译。
 - D13 产品链接（用户口径 2026-09-26 第三批，覆盖各官网仓 canonical）：统一使用 `https://<项目名小写>.weibaba.fun`——JustForShow、PassGone（`passgone.weibaba.fun`，忽略其官网仓旧 canonical `passgone.exifmate.com`）、PrivaMask、ExifMate（`exifmate.weibaba.fun`，忽略旧 canonical `exifmate.com`）、ForceSplit、SourceLens；FinFlowScope 开发中暂不外链。
@@ -40,3 +40,4 @@
 - v1.0.0（2026-09-26）：初始骨架。中英双语主页与隐私页；七款产品入口卡片；图标脚本化派生；robots/sitemap/`_headers`/security.txt；README 双语；AGENTS.md；`main_website.cmd`；推送 NAS（dev、main、release/v1.0.0、标签 v1.0.0）。
 - v1.1.0（2026-09-26）：域名确认 `weibaba.fun`；产品卡片补中文名与中英介绍（来源见 D3）；ForceSplit 修正为开发中且不外链；PassGone / ExifMate 链接按各官网仓 canonical 修正；新增「关于作者」（头像 + 爱好文案）与「请作者喝咖啡」（收款码）区块及页脚联系邮箱；隐私页与 security.txt 更新联系邮箱；徽标体系改为由用户提供的 `weblogo.jpg` 派生；README 双语加赞助区与关于作者；按规范推送 GitHub。
 - v1.2.0（2026-09-26）：产品卡片升级为富卡片（Logo + 名称 + 中文名 + 定位 + 功能特点列表 + 官网链接，见 D14），六个产品 logo 入仓 `assets/img/products/`；ForceSplit 改「已发布」并外链（用户口径）；PassGone / ExifMate 链接统一为 `passgone.weibaba.fun` / `exifmate.weibaba.fun`（用户口径，覆盖旧 canonical）；README 产品表同步。
+- v1.3.0（2026-09-26）：「请作者喝咖啡」改为弹出式收款码（纯 CSS `:target` 弹层：跳动咖啡按钮 + 遮罩 + ✕ 关闭，参照 PassGone 样式；无 JavaScript，页面不再直接展示收款码，见 D10）。

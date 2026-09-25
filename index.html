@@ -178,11 +178,19 @@
   <section class="container coffee" id="coffee" aria-labelledby="coffee-title">
     <h2 id="coffee-title">请作者喝咖啡</h2>
     <div class="coffee-box">
-      <img class="coffee-qr" src="assets/img/donate_qr.jpg" alt="请作者喝咖啡收款码" width="230" height="313">
-      <p>如果哪款小工具帮到了你，欢迎请作者喝杯咖啡 ☕</p>
+      <a class="coffee-btn" href="#qr-modal" title="点我，请作者喝杯咖啡" aria-label="打开收款码弹层">☕</a>
+      <p>如果哪款小工具帮到了你，欢迎请作者喝杯咖啡——点击咖啡杯，扫码支持。</p>
     </div>
   </section>
 </main>
+<div id="qr-modal" class="qr-modal">
+  <a class="qr-backdrop" href="#coffee" aria-label="关闭收款码弹层"></a>
+  <div class="qr-card">
+    <a class="qr-close" href="#coffee" aria-label="关闭">✕</a>
+    <img src="assets/img/donate_qr.jpg" alt="请作者喝咖啡收款码" width="240">
+    <span>微信扫一扫 · 请作者喝杯咖啡</span>
+  </div>
+</div>
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© 2026 Weibaba</p>
