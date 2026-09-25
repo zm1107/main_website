@@ -42,3 +42,4 @@
 - v1.2.0（2026-09-26）：产品卡片升级为富卡片（Logo + 名称 + 中文名 + 定位 + 功能特点列表 + 官网链接，见 D14），六个产品 logo 入仓 `assets/img/products/`；ForceSplit 改「已发布」并外链（用户口径）；PassGone / ExifMate 链接统一为 `passgone.weibaba.fun` / `exifmate.weibaba.fun`（用户口径，覆盖旧 canonical）；README 产品表同步。
 - v1.3.0（2026-09-26）：「请作者喝咖啡」改为弹出式收款码（纯 CSS `:target` 弹层：跳动咖啡按钮 + 遮罩 + ✕ 关闭，参照 PassGone 样式；无 JavaScript，页面不再直接展示收款码，见 D10）。
 - v1.3.1（2026-09-26）：仓库维护——删除 GitHub 网页端生成的 `.github/workflows/pylint.yml`（该工作流未安装 Pillow、对本静态站点仓库无意义且每次 push 必失败；用户确认删除）；站点内容无变化。
+- v1.3.2（2026-09-26）：去掉「关于作者」区中带链接的「请作者喝杯咖啡」一句（与底部弹跳咖啡按钮重复，用户口径：保留底部弹跳图标即可）；中英两页同步。
