@@ -41,3 +41,4 @@
 - v1.1.0（2026-09-26）：域名确认 `weibaba.fun`；产品卡片补中文名与中英介绍（来源见 D3）；ForceSplit 修正为开发中且不外链；PassGone / ExifMate 链接按各官网仓 canonical 修正；新增「关于作者」（头像 + 爱好文案）与「请作者喝咖啡」（收款码）区块及页脚联系邮箱；隐私页与 security.txt 更新联系邮箱；徽标体系改为由用户提供的 `weblogo.jpg` 派生；README 双语加赞助区与关于作者；按规范推送 GitHub。
 - v1.2.0（2026-09-26）：产品卡片升级为富卡片（Logo + 名称 + 中文名 + 定位 + 功能特点列表 + 官网链接，见 D14），六个产品 logo 入仓 `assets/img/products/`；ForceSplit 改「已发布」并外链（用户口径）；PassGone / ExifMate 链接统一为 `passgone.weibaba.fun` / `exifmate.weibaba.fun`（用户口径，覆盖旧 canonical）；README 产品表同步。
 - v1.3.0（2026-09-26）：「请作者喝咖啡」改为弹出式收款码（纯 CSS `:target` 弹层：跳动咖啡按钮 + 遮罩 + ✕ 关闭，参照 PassGone 样式；无 JavaScript，页面不再直接展示收款码，见 D10）。
+- v1.3.1（2026-09-26）：仓库维护——删除 GitHub 网页端生成的 `.github/workflows/pylint.yml`（该工作流未安装 Pillow、对本静态站点仓库无意义且每次 push 必失败；用户确认删除）；站点内容无变化。
