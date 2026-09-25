@@ -16,7 +16,7 @@
 
 - D1 域名（已确认）：`https://weibaba.fun/`，主域即主站，产品子站挂二级域名。
 - D2 部署：NAS 推送不受限；GitHub 发布源按 rules/website.md 15.2 约定 `git@github.com:zm1107/main_website.git`，用户已确认建仓并授权按规范推送，推送前以 `git ls-remote` 验证地址有效。
-- D3 取材（已授权）：产品口径来源——JustForShow / PassGone / PrivaMask / ExifMate 取自各自官网仓 `index.html` 与 `en/index.html` 的 og 权威口径（本地路径 `D:\github\<产品名>`）；SourceLens 取自应用仓 `README.md` / `README.en.md`；ForceSplit 取自应用仓 `README.md` / `README.en.md`（状态「开发中（需求确认阶段），尚未发布」，官网未建成故不外链）；FinFlowScope 暂无仓库，仅展示名称与「开发中」状态，不写介绍（全局第 5 条零编造）。
+- D3 取材（已授权）：产品口径来源——JustForShow / PassGone / PrivaMask / ExifMate 取自各自官网仓 `index.html` 与 `en/index.html` 的 og 口径（本地路径 `D:\github\<产品名>`）；SourceLens / ForceSplit 取自应用仓 `README.md` / `README.en.md`；功能特点取自各应用仓 README 的核心特性/主要功能清单（PassGone 为 README 标语行 + 官网英文版标题；ExifMate 为官网「四大核心卖点」）。ForceSplit 状态：**已发布**（用户口径 2026-09-26：「马上开发完毕，可以当作已发布」，覆盖其 README「尚未发布」旧状态）。FinFlowScope 暂无仓库，仅展示名称与「开发中」状态，不写介绍（全局第 5 条零编造）。
 - D4 仓库结构：沿用 rules/release.md 9.3 网站仓库结构——`index.html` 中文主站、`en/` 英文版、`privacy/` 隐私页、`assets/style.css` 全站唯一样式、`assets/img/` 图像（weblogo.jpg、weibaba_face.jpg、donate_qr.jpg、logo.png、og.png）、`favicon.ico|.png`、`apple-touch-icon.png`、`robots.txt`、`sitemap.xml`、`_headers`、`.well-known/security.txt`、`README.md` + `README.en.md`、`AGENTS.md`、本设计文档、`tools/make_icons.py`（源图 `tools/src/weblogo.jpg`）。
 - D5 分支与提交：按全局第 3 条，日常开发在 `dev`，发布合入 `main` 并打轻量标签；提交信息只写版本号，改动记录于本文件版本表。
 - D6 运行方式：项目同名命令 `main_website.cmd`（全局第 16 条），使用同名 conda 环境 `main_website` 启动本地静态服务。
@@ -26,16 +26,17 @@
 - D10 请作者喝咖啡（用户口径）：收款码图取自 justforshow 官网仓 `assets/img/donate_qr.jpg`（与 passgone 官网仓同图）；主站设「请作者喝咖啡」区，GitHub README 尾部同步「赞助」区。
 - D11 视觉素材（用户提供）：`weblogo.jpg` 为站点徽标源图（1024×1024 白底圆形徽章 + Weibaba Zhang SoftWare 字样，源图存 `tools/src/`），favicon / apple-touch-icon / logo.png / og.png 全部由 `tools/make_icons.py` 从其派生（取徽章区域，禁止手改图片）；`weibaba_face.jpg` 为作者头像（油画风格双人像，含画框，完整展示、不做裁切）。
 - D12 关于作者文案（用户口径扩写）：中文「这些软件都出自个人爱好。开发初衷很简单：日常里经常遇到的小需求，顺手把它们做成小工具。希望它们也能帮到你。」；英文对应翻译。
-- D13 产品链接（各官网仓 canonical 权威口径）：JustForShow `https://justforshow.weibaba.fun`、PassGone `https://passgone.exifmate.com`、PrivaMask `https://privamask.weibaba.fun`、ExifMate `https://exifmate.com`、SourceLens `https://sourcelens.weibaba.fun`；ForceSplit 与 FinFlowScope 开发中不外链。PassGone / ExifMate 两站未来若按第 15 条迁移至 `.weibaba.fun`，需回写本条并更新站点链接。
+- D13 产品链接（用户口径 2026-09-26 第三批，覆盖各官网仓 canonical）：统一使用 `https://<项目名小写>.weibaba.fun`——JustForShow、PassGone（`passgone.weibaba.fun`，忽略其官网仓旧 canonical `passgone.exifmate.com`）、PrivaMask、ExifMate（`exifmate.weibaba.fun`，忽略旧 canonical `exifmate.com`）、ForceSplit、SourceLens；FinFlowScope 开发中暂不外链。
+- D14 产品卡片信息结构（用户口径）：每款产品展示 **Logo + 英文名 + 中文名 + 干什么的（定位）+ 功能特点列表 + 官网链接**。产品 logo 入仓 `assets/img/products/<项目名小写>.png`，来源为各应用仓 `store/ico/app_icon.png` 源图标（ExifMate 用其官网仓 `assets/img/logo.png`，其应用仓不在本机）；功能特点为各仓权威清单的节选翻译对照，逐款来源见 D3。
 
 ## 待办与后续
 
 1. FinFlowScope 上线后：补官网链接、中文名与介绍（以其应用仓为权威）。
-2. ForceSplit 发布后：状态改「已发布」并链接其官网。
-3. PassGone / ExifMate 官网域名若迁移至 `.weibaba.fun`，同步更新链接（D13）。
-4. 主站专属 Git 提交身份（可选，待用户提供）。
+2. ForceSplit 官网建成后：确认 `forcesplit.weibaba.fun` 可访问。
+3. 主站专属 Git 提交身份（可选，待用户提供）。
 
 ## 版本表
 
 - v1.0.0（2026-09-26）：初始骨架。中英双语主页与隐私页；七款产品入口卡片；图标脚本化派生；robots/sitemap/`_headers`/security.txt；README 双语；AGENTS.md；`main_website.cmd`；推送 NAS（dev、main、release/v1.0.0、标签 v1.0.0）。
 - v1.1.0（2026-09-26）：域名确认 `weibaba.fun`；产品卡片补中文名与中英介绍（来源见 D3）；ForceSplit 修正为开发中且不外链；PassGone / ExifMate 链接按各官网仓 canonical 修正；新增「关于作者」（头像 + 爱好文案）与「请作者喝咖啡」（收款码）区块及页脚联系邮箱；隐私页与 security.txt 更新联系邮箱；徽标体系改为由用户提供的 `weblogo.jpg` 派生；README 双语加赞助区与关于作者；按规范推送 GitHub。
+- v1.2.0（2026-09-26）：产品卡片升级为富卡片（Logo + 名称 + 中文名 + 定位 + 功能特点列表 + 官网链接，见 D14），六个产品 logo 入仓 `assets/img/products/`；ForceSplit 改「已发布」并外链（用户口径）；PassGone / ExifMate 链接统一为 `passgone.weibaba.fun` / `exifmate.weibaba.fun`（用户口径，覆盖旧 canonical）；README 产品表同步。

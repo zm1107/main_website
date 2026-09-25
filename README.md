@@ -19,14 +19,14 @@
 | 产品 | 中文名 | 状态 | 官网 |
 |---|---|---|---|
 | JustForShow | 做个样子 | 已发布 | <https://justforshow.weibaba.fun> |
-| PassGone |  | 已发布 | <https://passgone.exifmate.com> |
+| PassGone |  | 已发布 | <https://passgone.weibaba.fun> |
 | PrivaMask | 数隐通 | 已发布 | <https://privamask.weibaba.fun> |
-| ExifMate |  | 已发布 | <https://exifmate.com> |
+| ExifMate |  | 已发布 | <https://exifmate.weibaba.fun> |
 | SourceLens | 源鉴 | 已发布 | <https://sourcelens.weibaba.fun> |
-| ForceSplit |  | 开发中 | 官网建设中 |
+| ForceSplit |  | 已发布 | <https://forcesplit.weibaba.fun> |
 | FinFlowScope |  | 开发中 | 即将推出 |
 
-各产品介绍以主站主页与各产品官网为准；产品口径来源见 `docs/site-design.md` D3。
+各产品功能特点与 logo 以主站主页为准；口径来源见 `docs/site-design.md` D3/D14。
 
 ## 关于本仓库
 
@@ -43,7 +43,8 @@ main_website/
 ├── assets/
 │   ├── style.css           # 全站唯一样式
 │   └── img/                # weblogo.jpg（徽标源图）、weibaba_face.jpg（作者画像）、
-│                           # donate_qr.jpg（收款码）、logo.png、og.png（派生）
+│                           # donate_qr.jpg（收款码）、products/（各产品 logo）、
+│                           # logo.png、og.png（派生）
 ├── favicon.ico | favicon.png | apple-touch-icon.png   # 均由 tools/make_icons.py 派生
 ├── robots.txt | sitemap.xml | _headers | .well-known/security.txt
 ├── tools/

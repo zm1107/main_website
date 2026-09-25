@@ -19,14 +19,14 @@ Every piece of software here is built purely out of hobby — turning needs I ru
 | Product | Chinese name | Status | Website |
 |---|---|---|---|
 | JustForShow | 做个样子 | Released | <https://justforshow.weibaba.fun> |
-| PassGone |  | Released | <https://passgone.exifmate.com> |
+| PassGone |  | Released | <https://passgone.weibaba.fun> |
 | PrivaMask | 数隐通 | Released | <https://privamask.weibaba.fun> |
-| ExifMate |  | Released | <https://exifmate.com> |
+| ExifMate |  | Released | <https://exifmate.weibaba.fun> |
 | SourceLens | 源鉴 | Released | <https://sourcelens.weibaba.fun> |
-| ForceSplit |  | In development | Website coming |
+| ForceSplit |  | Released | <https://forcesplit.weibaba.fun> |
 | FinFlowScope |  | In development | Coming soon |
 
-Product wording is governed by the home page and each product's own website; sources are recorded in `docs/site-design.md` D3.
+Product features and logos are shown on the home page; wording sources are recorded in `docs/site-design.md` D3/D14.
 
 ## About this repository
 
@@ -43,7 +43,8 @@ main_website/
 ├── assets/
 │   ├── style.css           # the only stylesheet
 │   └── img/                # weblogo.jpg (emblem source), weibaba_face.jpg (author portrait),
-│                           # donate_qr.jpg (QR), logo.png, og.png (derived)
+│                           # donate_qr.jpg (QR), products/ (product logos),
+│                           # logo.png, og.png (derived)
 ├── favicon.ico | favicon.png | apple-touch-icon.png   # all derived by tools/make_icons.py
 ├── robots.txt | sitemap.xml | _headers | .well-known/security.txt
 ├── tools/

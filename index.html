@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Weibaba 软件 · 产品主站</title>
-<meta name="description" content="Weibaba 软件产品主站：做个样子 JustForShow、PassGone、数隐通 PrivaMask、ExifMate、源鉴 SourceLens，以及开发中的 ForceSplit、FinFlowScope。每款产品都有独立官网。">
+<meta name="description" content="Weibaba 软件产品主站：做个样子 JustForShow、PassGone、数隐通 PrivaMask、ExifMate、源鉴 SourceLens、ForceSplit，以及开发中的 FinFlowScope。每款产品都有独立官网。">
 <link rel="canonical" href="https://weibaba.fun/">
 <link rel="alternate" hreflang="zh-CN" href="https://weibaba.fun/">
 <link rel="alternate" hreflang="en" href="https://weibaba.fun/en/">
@@ -45,44 +45,118 @@
     <h2 id="products-title">产品列表</h2>
     <div class="grid">
       <a class="card" href="https://justforshow.weibaba.fun">
-        <span class="badge badge-ok">已发布</span>
-        <span class="card-name">JustForShow</span>
-        <span class="card-zh">做个样子</span>
-        <span class="card-intro">批量提取 .xlsx / .xls / .csv 表头与前 N 行样例，1:1 镜像目录结构，完全本地运行。</span>
+        <div class="card-head">
+          <img class="card-logo" src="assets/img/products/justforshow.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">JustForShow</span>
+            <span class="card-zh">做个样子</span>
+          </div>
+          <span class="badge badge-ok">已发布</span>
+        </div>
+        <p class="card-intro">批量提取 .xlsx / .xls / .csv 表头与前 N 行样例，1:1 镜像目录结构，秒级生成轻量测试数据集。</p>
+        <ul class="card-features">
+          <li>递归扫描 + 按格式过滤，非数据文件可跳过或原样复制</li>
+          <li>实时预览表头与前若干行，所见即所得</li>
+          <li>全局 + 单文件两级抽样行数（0 = 仅表头）</li>
+          <li>目标目录 1:1 镜像源目录结构，同名同格式原位对照</li>
+          <li>大文件流式读取头部，几十 GB 文件不卡死</li>
+        </ul>
         <span class="card-go">访问官网 ↗</span>
       </a>
-      <a class="card" href="https://passgone.exifmate.com">
-        <span class="badge badge-ok">已发布</span>
-        <span class="card-name">PassGone</span>
-        <span class="card-intro">完全离线的 Office / PDF / 压缩包密码找回工具，10 种格式全覆盖。</span>
+      <a class="card" href="https://passgone.weibaba.fun">
+        <div class="card-head">
+          <img class="card-logo" src="assets/img/products/passgone.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">PassGone</span>
+          </div>
+          <span class="badge badge-ok">已发布</span>
+        </div>
+        <p class="card-intro">完全离线的 Office / PDF / 压缩包密码找回工具，10 种格式全覆盖。</p>
+        <ul class="card-features">
+          <li>10 种格式：Office / PDF / ZIP / RAR / 7z / WPS 全覆盖</li>
+          <li>完全离线，本地处理不上传</li>
+          <li>多核并行 + GPU 加速，实测最高 ≈15,832× 提速</li>
+          <li>断点续跑，关机不白跑</li>
+          <li>字典 + 规则组合、智能去重、中英双语</li>
+        </ul>
         <span class="card-go">访问官网 ↗</span>
       </a>
       <a class="card" href="https://privamask.weibaba.fun">
-        <span class="badge badge-ok">已发布</span>
-        <span class="card-name">PrivaMask</span>
-        <span class="card-zh">数隐通</span>
-        <span class="card-intro">Windows 本地数据脱敏：xls / xlsx / csv / doc / docx 批量脱敏，遮蔽 + 虚构双模式，位置级还原，零上传。</span>
+        <div class="card-head">
+          <img class="card-logo" src="assets/img/products/privamask.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">PrivaMask</span>
+            <span class="card-zh">数隐通</span>
+          </div>
+          <span class="badge badge-ok">已发布</span>
+        </div>
+        <p class="card-intro">Windows 本地数据脱敏：xls / xlsx / csv / doc / docx 批量脱敏、留痕审计、位置级还原，全程零上传。</p>
+        <ul class="card-features">
+          <li>遮蔽 + 虚构双模式，内置 7 类核心敏感字段规则</li>
+          <li>预置 20 类数据类型、167 个常见业务字段映射</li>
+          <li>Excel 保留格式样式；Word 覆盖正文、表格、页眉页脚</li>
+          <li>位置级还原 + 映射规则导出，留痕审计</li>
+          <li>源文件只读、结果另存；100% 本地零上传</li>
+        </ul>
         <span class="card-go">访问官网 ↗</span>
       </a>
-      <a class="card" href="https://exifmate.com">
-        <span class="badge badge-ok">已发布</span>
-        <span class="card-name">ExifMate</span>
-        <span class="card-intro">全离线的照片 / 视频 EXIF 批量管家：智能模板识别、极速并行写入，快照一键还原。</span>
+      <a class="card" href="https://exifmate.weibaba.fun">
+        <div class="card-head">
+          <img class="card-logo" src="assets/img/products/exifmate.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">ExifMate</span>
+          </div>
+          <span class="badge badge-ok">已发布</span>
+        </div>
+        <p class="card-intro">全离线的照片 / 视频 EXIF 批量管家。</p>
+        <ul class="card-features">
+          <li>全离线运行，真正的隐私架构</li>
+          <li>全格式：不止照片，更支持 MP4 / MOV 视频</li>
+          <li>无忧撤销：SQLite 快照，改错万个文件一键还原</li>
+          <li>智能模板识别，元数据自动流转；任意标签编辑</li>
+          <li>GPS 隐私清除 · RAW+JPG 配对补全 · 中英双语</li>
+        </ul>
         <span class="card-go">访问官网 ↗</span>
       </a>
       <a class="card" href="https://sourcelens.weibaba.fun">
-        <span class="badge badge-ok">已发布</span>
-        <span class="card-name">SourceLens</span>
-        <span class="card-zh">源鉴</span>
-        <span class="card-intro">标书文档同源比对：作者风格归属 + 文档指纹取证，每条结论均附页码定位与证据。</span>
+        <div class="card-head">
+          <img class="card-logo" src="assets/img/products/sourcelens.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">SourceLens</span>
+            <span class="card-zh">源鉴</span>
+          </div>
+          <span class="badge badge-ok">已发布</span>
+        </div>
+        <p class="card-intro">标书文档同源比对：作者风格归属 + 文档指纹取证，每条结论均附页码定位与证据。</p>
+        <ul class="card-features">
+          <li>一键比对：风格统计 + 十类指纹通道统一加权计分</li>
+          <li>聚类分组 / 匹配矩阵 / 证据详情多视图，可导出 HTML 报告</li>
+          <li>双层错别字识别，共现错别字是最强风格信号</li>
+          <li>证据分级：铁证 / 强证 / 佐证，逐条附页码定位</li>
+          <li>历史数据库：SHA-256 身份码，跨项目追溯同一文件</li>
+          <li>扫描页自动 OCR；完全离线运行</li>
+        </ul>
         <span class="card-go">访问官网 ↗</span>
       </a>
-      <div class="card card-soon">
-        <span class="badge badge-dev">开发中</span>
-        <span class="card-name">ForceSplit</span>
-        <span class="card-intro">把 XLS / XLSX / CSV 数据按省市、年月、金额档位等业务规则拆分成多个文件，无需技术背景。</span>
-        <span class="card-soon-text">开发中 · 官网建设中</span>
-      </div>
+      <a class="card" href="https://forcesplit.weibaba.fun">
+        <div class="card-head">
+          <img class="card-logo" src="assets/img/products/forcesplit.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">ForceSplit</span>
+          </div>
+          <span class="badge badge-ok">已发布</span>
+        </div>
+        <p class="card-intro">不懂技术也能把 XLS / XLSX / CSV 数据按业务规则拆分成多个文件。</p>
+        <ul class="card-features">
+          <li>按行政区划拆分：省 / 省市 / 省市区县三级（身份证号 / 纳税人识别号）</li>
+          <li>按日期拆分：年 / 季度 / 月</li>
+          <li>按金额区间与任意字段值拆分</li>
+          <li>扁平（文件名前缀）或分层（目录树）两种输出形态</li>
+          <li>拆分前行数预览、拆分后行数守恒核对</li>
+          <li>全程本地处理，不上传任何数据</li>
+        </ul>
+        <span class="card-go">访问官网 ↗</span>
+      </a>
       <div class="card card-soon">
         <span class="badge badge-dev">开发中</span>
         <span class="card-name">FinFlowScope</span>

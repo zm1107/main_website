@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Weibaba Software · Product Home</title>
-<meta name="description" content="The home of Weibaba Software products: JustForShow, PassGone, PrivarMask, ExifMate, SourceLens, plus ForceSplit and FinFlowScope in development. Each product has its own official website.">
+<meta name="description" content="The home of Weibaba Software products: JustForShow, PassGone, PrivarMask, ExifMate, SourceLens, ForceSplit, and FinFlowScope in development. Each product has its own official website.">
 <link rel="canonical" href="https://weibaba.fun/en/">
 <link rel="alternate" hreflang="zh-CN" href="https://weibaba.fun/">
 <link rel="alternate" hreflang="en" href="https://weibaba.fun/en/">
@@ -45,44 +45,118 @@
     <h2 id="products-title">Products</h2>
     <div class="grid">
       <a class="card" href="https://justforshow.weibaba.fun">
-        <span class="badge badge-ok">Released</span>
-        <span class="card-name">JustForShow</span>
-        <span class="card-zh">做个样子</span>
-        <span class="card-intro">Batch-extract headers and the first N rows of .xlsx / .xls / .csv into a 1:1 mirrored folder structure — fully offline.</span>
+        <div class="card-head">
+          <img class="card-logo" src="../assets/img/products/justforshow.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">JustForShow</span>
+            <span class="card-zh">做个样子</span>
+          </div>
+          <span class="badge badge-ok">Released</span>
+        </div>
+        <p class="card-intro">Batch-extract headers and the first N rows of .xlsx / .xls / .csv into a 1:1 mirrored folder structure — lightweight test datasets in seconds.</p>
+        <ul class="card-features">
+          <li>Recursive scan with per-format filtering; non-data files skip or copy as-is</li>
+          <li>Live preview of headers and leading rows — WYSIWYG</li>
+          <li>Two-level sample row count: global default + per-file overrides</li>
+          <li>Output mirrors the source structure 1:1, same names and formats</li>
+          <li>Streams only file heads — multi-GB files never freeze the UI</li>
+        </ul>
         <span class="card-go">Visit website ↗</span>
       </a>
-      <a class="card" href="https://passgone.exifmate.com">
-        <span class="badge badge-ok">Released</span>
-        <span class="card-name">PassGone</span>
-        <span class="card-intro">Fully offline password recovery for Office / PDF / archives, covering 10 formats.</span>
+      <a class="card" href="https://passgone.weibaba.fun">
+        <div class="card-head">
+          <img class="card-logo" src="../assets/img/products/passgone.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">PassGone</span>
+          </div>
+          <span class="badge badge-ok">Released</span>
+        </div>
+        <p class="card-intro">Fully offline password recovery for Office / PDF / archives, covering 10 formats.</p>
+        <ul class="card-features">
+          <li>10 formats: Office / PDF / ZIP / RAR / 7z / WPS</li>
+          <li>Fully offline — everything runs locally</li>
+          <li>Multi-core parallel + GPU acceleration, benchmarked up to ≈15,832×</li>
+          <li>Resumable runs — never lose progress</li>
+          <li>Dictionaries + rules; smart de-dup; bilingual UI</li>
+        </ul>
         <span class="card-go">Visit website ↗</span>
       </a>
       <a class="card" href="https://privamask.weibaba.fun">
-        <span class="badge badge-ok">Released</span>
-        <span class="card-name">PrivaMask</span>
-        <span class="card-zh">数隐通</span>
-        <span class="card-intro">Local data masking for Windows: batch masking for xls / xlsx / csv / doc / docx, masking + fake-data modes, position-level restore, zero upload.</span>
+        <div class="card-head">
+          <img class="card-logo" src="../assets/img/products/privamask.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">PrivaMask</span>
+            <span class="card-zh">数隐通</span>
+          </div>
+          <span class="badge badge-ok">Released</span>
+        </div>
+        <p class="card-intro">Local-first data masking for Windows: batch-mask xls / xlsx / csv / doc / docx with audit trails and position-level restore — nothing is ever uploaded.</p>
+        <ul class="card-features">
+          <li>Mask + fake-data modes, 7 built-in core sensitive-field rules</li>
+          <li>20 preset data types and 167 common business-field mappings</li>
+          <li>Excel keeps formatting; Word covers body, tables, headers &amp; footers</li>
+          <li>Position-level restore + mapping export, full audit trail</li>
+          <li>Source files read-only; 100% local, zero upload</li>
+        </ul>
         <span class="card-go">Visit website ↗</span>
       </a>
-      <a class="card" href="https://exifmate.com">
-        <span class="badge badge-ok">Released</span>
-        <span class="card-name">ExifMate</span>
-        <span class="card-intro">Fully offline photo &amp; video EXIF toolkit: smart templates, parallel writes, one-click snapshot restore.</span>
+      <a class="card" href="https://exifmate.weibaba.fun">
+        <div class="card-head">
+          <img class="card-logo" src="../assets/img/products/exifmate.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">ExifMate</span>
+          </div>
+          <span class="badge badge-ok">Released</span>
+        </div>
+        <p class="card-intro">Fully offline photo &amp; video EXIF batch toolkit.</p>
+        <ul class="card-features">
+          <li>Fully offline — real privacy architecture</li>
+          <li>Every format — not just photos, MP4 / MOV video too</li>
+          <li>Panic-free batch editing: SQLite snapshots, one-click full restore</li>
+          <li>Smart template detection; any-tag editing</li>
+          <li>GPS privacy scrub · RAW+JPG pair fill · bilingual UI</li>
+        </ul>
         <span class="card-go">Visit website ↗</span>
       </a>
       <a class="card" href="https://sourcelens.weibaba.fun">
-        <span class="badge badge-ok">Released</span>
-        <span class="card-name">SourceLens</span>
-        <span class="card-zh">源鉴</span>
-        <span class="card-intro">Bid document provenance comparison: author-style attribution plus document-fingerprint forensics, every conclusion carries page-level evidence.</span>
+        <div class="card-head">
+          <img class="card-logo" src="../assets/img/products/sourcelens.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">SourceLens</span>
+            <span class="card-zh">源鉴</span>
+          </div>
+          <span class="badge badge-ok">Released</span>
+        </div>
+        <p class="card-intro">Bid document provenance comparison: author-style attribution plus document-fingerprint forensics, every conclusion carries page-level evidence.</p>
+        <ul class="card-features">
+          <li>One-click comparison: style statistics + ten fingerprint channels in one unified weight pool</li>
+          <li>Clusters / score matrix / evidence-detail views; HTML report export</li>
+          <li>Two-layer typo detection — co-occurring typos are the strongest style signal</li>
+          <li>Evidence grading: hard / strong / soft, each item page-referenced</li>
+          <li>History database: SHA-256 identity codes trace one file across projects</li>
+          <li>Automatic OCR for scanned pages; fully offline</li>
+        </ul>
         <span class="card-go">Visit website ↗</span>
       </a>
-      <div class="card card-soon">
-        <span class="badge badge-dev">In development</span>
-        <span class="card-name">ForceSplit</span>
-        <span class="card-intro">Split XLS / XLSX / CSV data by province/city, year/month, amount ranges and other business rules — no technical skills required.</span>
-        <span class="card-soon-text">In development · website coming</span>
-      </div>
+      <a class="card" href="https://forcesplit.weibaba.fun">
+        <div class="card-head">
+          <img class="card-logo" src="../assets/img/products/forcesplit.png" alt="" width="56" height="56">
+          <div class="card-title">
+            <span class="card-name">ForceSplit</span>
+          </div>
+          <span class="badge badge-ok">Released</span>
+        </div>
+        <p class="card-intro">Split XLS / XLSX / CSV data by business rules — no technical skills required.</p>
+        <ul class="card-features">
+          <li>Split by administrative division: province / city / district (from ID or taxpayer numbers)</li>
+          <li>Split by date: year / quarter / month</li>
+          <li>Split by amount ranges or any field value</li>
+          <li>Flat (filename prefixes) or hierarchical (directory tree) output</li>
+          <li>Row-count preview before, reconciliation after</li>
+          <li>Fully local processing; no data leaves your machine</li>
+        </ul>
+        <span class="card-go">Visit website ↗</span>
+      </a>
       <div class="card card-soon">
         <span class="badge badge-dev">In development</span>
         <span class="card-name">FinFlowScope</span>
