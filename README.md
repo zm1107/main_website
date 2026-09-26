@@ -69,7 +69,7 @@ main_website/
 
 ## 联系
 
-联系与反馈：<feed@weibaba.fun>（请注明产品名称）
+联系与反馈：<feedback@weibaba.fun>（请注明产品名称）
 
 ## 隐私
 

@@ -22,7 +22,7 @@
 - D6 运行方式：项目同名命令 `main_website.cmd`（全局第 16 条），使用同名 conda 环境 `main_website` 启动本地静态服务。
 - D7 站点红线（硬性）：纯静态、零追踪——无统计/分析、无任何外部资源请求（无 CDN 字体、外链图片）、无 Cookie、无表单、无服务端代码、无 JavaScript；CSP 通过 `_headers` 全站收紧（README 中的 shields.io 徽章仅存在于 README，不入页面）。
 - D8 提交身份：暂用全局身份 `Weibaba <zm1107@live.com>`；如需主站专属身份待用户提供。
-- D9 联系方式（用户口径）：`feed@weibaba.fun`（请注明产品名称）；用于页脚、关于作者区、隐私页「联系方式」与 `.well-known/security.txt`。
+- D9 联系方式（用户口径）：反馈邮箱统一为 `feedback@weibaba.fun`（请注明产品名称）；用于页脚、关于作者区、隐私页「联系方式」、`.well-known/security.txt` 与 README。2026-09-26 第四批用户口径：「反馈邮箱统一为 feedback@weibaba.fun」，替换此前的 `feed@weibaba.fun`。
 - D10 请作者喝咖啡（用户口径）：收款码取自 justforshow 官网仓 `assets/img/donate_qr.jpg`（与 passgone 官网仓同图）。**弹出式**（用户口径 2026-09-26：不要直接展示，点击弹出图片）：交互参照 PassGone 样式（跳动咖啡按钮 + 点击弹收款码 + 遮罩/✕ 关闭），但以纯 CSS `:target` 弹层实现（`#qr-modal`），保持本仓「无 JavaScript」红线与 CSP 不变；`prefers-reduced-motion` 时停用跳动动画。GitHub README 内无法弹层，仍直接展示收款码。
 - D11 视觉素材（用户提供）：`weblogo.jpg` 为站点徽标源图（1024×1024 白底圆形徽章 + Weibaba Zhang SoftWare 字样，源图存 `tools/src/`），favicon / apple-touch-icon / logo.png / og.png 全部由 `tools/make_icons.py` 从其派生（取徽章区域，禁止手改图片）；`weibaba_face.jpg` 为作者头像（油画风格双人像，含画框，完整展示、不做裁切）。
 - D12 关于作者文案（用户口径扩写）：中文「这些软件都出自个人爱好。开发初衷很简单：日常里经常遇到的小需求，顺手把它们做成小工具。希望它们也能帮到你。」；英文对应翻译。
@@ -44,3 +44,4 @@
 - v1.3.1（2026-09-26）：仓库维护——删除 GitHub 网页端生成的 `.github/workflows/pylint.yml`（该工作流未安装 Pillow、对本静态站点仓库无意义且每次 push 必失败；用户确认删除）；站点内容无变化。
 - v1.3.2（2026-09-26）：去掉「关于作者」区中带链接的「请作者喝咖啡」一句（与底部弹跳咖啡按钮重复，用户口径：保留底部弹跳图标即可）；中英两页同步。
 - v1.4.0（2026-09-26）：FinFlowScope 卡片升级为富卡片（中文名「观流」、定位与功能特点取自 `D:\tool_box\FinFlowScope\README.md`，logo 取其 `logo/app-logo-512x512.png`），保留「开发中」徽章、暂无官网链接（用户口径）；README 产品表同步中文名。
+- v1.4.1（2026-09-26）：反馈邮箱由 `feed@weibaba.fun` 统一为 `feedback@weibaba.fun`（用户口径第四批），页面页脚、关于作者区、隐私页、security.txt、README 双语全部同步（见 D9）。

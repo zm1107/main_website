@@ -1,4 +1,4 @@
-Contact: mailto:feed@weibaba.fun
+Contact: mailto:feedback@weibaba.fun
 Expires: 2027-09-26T00:00:00.000Z
 Preferred-Languages: zh, en
 Canonical: https://weibaba.fun/.well-known/security.txt

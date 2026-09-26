@@ -69,7 +69,7 @@ Alternative: `conda run -n main_website --no-capture-output python -m http.serve
 
 ## Contact
 
-Contact & feedback: <feed@weibaba.fun> (please mention the product name)
+Contact & feedback: <feedback@weibaba.fun> (please mention the product name)
 
 ## Privacy
 
