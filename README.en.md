@@ -25,6 +25,8 @@ Every piece of software here is built purely out of hobby — turning needs I ru
 | SourceLens | 源鉴 | Released | <https://sourcelens.weibaba.fun> |
 | ForceSplit |  | Released | <https://forcesplit.weibaba.fun> |
 | FinFlowScope | 观流 | In development | Coming soon |
+| ChronoMark | 刻度 | In development | Website coming |
+| LANsider | 局域网聊天 | In testing | Website coming |
 
 Product features and logos are shown on the home page; wording sources are recorded in `docs/site-design.md` D3/D14.
 

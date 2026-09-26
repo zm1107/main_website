@@ -14,6 +14,9 @@
   --dev-bg: #fff4dd;
   --dev-text: #92650a;
   --dev-border: #f0dcae;
+  --test-bg: #e0edff;
+  --test-text: #1d5fd6;
+  --test-border: #bcd4f7;
   --shadow: 0 10px 28px rgba(23, 39, 64, 0.09);
 }
 
@@ -32,6 +35,9 @@
     --dev-bg: #33270d;
     --dev-text: #ecc37a;
     --dev-border: #4a3a14;
+    --test-bg: #10233f;
+    --test-text: #8ab2ff;
+    --test-border: #1f3a63;
     --shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
   }
 }
@@ -384,6 +390,7 @@ section h2 {
 
 .badge-ok { background: var(--ok-bg); color: var(--ok-text); border-color: var(--ok-border); }
 .badge-dev { background: var(--dev-bg); color: var(--dev-text); border-color: var(--dev-border); }
+.badge-test { background: var(--test-bg); color: var(--test-text); border-color: var(--test-border); }
 
 /* 隐私页正文 */
 .prose { padding-top: 48px; padding-bottom: 56px; max-width: 760px; }
