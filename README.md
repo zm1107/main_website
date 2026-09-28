@@ -19,11 +19,11 @@
 | 产品 | 中文名 | 状态 | 官网 |
 |---|---|---|---|
 | JustForShow | 做个样子 | 已发布 | <https://justforshow.weibaba.fun> |
-| PassGone |  | 已发布 | <https://passgone.weibaba.fun> |
+| PassGone | 密码滚蛋 | 已发布 | <https://passgone.weibaba.fun> |
 | PrivaMask | 数隐通 | 已发布 | <https://privamask.weibaba.fun> |
 | ExifMate |  | 已发布 | <https://exifmate.weibaba.fun> |
 | SourceLens | 源鉴 | 已发布 | <https://sourcelens.weibaba.fun> |
-| ForceSplit |  | 已发布 | <https://forcesplit.weibaba.fun> |
+| ForceSplit | 庖丁解表 | 已发布 | <https://forcesplit.weibaba.fun> |
 | FinFlowScope | 观流 | 开发中 | 即将推出 |
 | ChronoMark | 刻度 | 开发中 | 官网建设中 |
 | LANsider | 局域网聊天 | 测试中 | 官网建设中 |

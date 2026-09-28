@@ -19,11 +19,11 @@ Every piece of software here is built purely out of hobby — turning needs I ru
 | Product | Chinese name | Status | Website |
 |---|---|---|---|
 | JustForShow | 做个样子 | Released | <https://justforshow.weibaba.fun> |
-| PassGone |  | Released | <https://passgone.weibaba.fun> |
+| PassGone | 密码滚蛋 | Released | <https://passgone.weibaba.fun> |
 | PrivaMask | 数隐通 | Released | <https://privamask.weibaba.fun> |
 | ExifMate |  | Released | <https://exifmate.weibaba.fun> |
 | SourceLens | 源鉴 | Released | <https://sourcelens.weibaba.fun> |
-| ForceSplit |  | Released | <https://forcesplit.weibaba.fun> |
+| ForceSplit | 庖丁解表 | Released | <https://forcesplit.weibaba.fun> |
 | FinFlowScope | 观流 | In development | Coming soon |
 | ChronoMark | 刻度 | In development | Website coming |
 | LANsider | 局域网聊天 | In testing | Website coming |
