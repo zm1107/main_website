@@ -26,7 +26,7 @@
 | ForceSplit | 庖丁解表 | 已发布 | <https://forcesplit.weibaba.fun> |
 | FinFlowScope | 观流 | 开发中 | 即将推出 |
 | ChronoMark | 刻度 | 开发中 | 官网建设中 |
-| LANsider | 局域网聊天 | 测试中 | 官网建设中 |
+| LANsider | 局内人 | 测试中 | 官网建设中 |
 
 各产品功能特点与 logo 以主站主页为准；口径来源见 `docs/site-design.md` D3/D14。
 

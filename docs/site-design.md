@@ -23,7 +23,7 @@
 - D7 站点红线（硬性）：纯静态、零追踪——无统计/分析、无任何外部资源请求（无 CDN 字体、外链图片）、无 Cookie、无表单、无服务端代码、无 JavaScript；CSP 通过 `_headers` 全站收紧（README 中的 shields.io 徽章仅存在于 README，不入页面）。
 - D8 提交身份：暂用全局身份 `Weibaba <zm1107@live.com>`；如需主站专属身份待用户提供。
 - D9 联系方式（用户口径）：反馈邮箱统一为 `feedback@weibaba.fun`（请注明产品名称）；用于页脚、关于作者区、隐私页「联系方式」、`.well-known/security.txt` 与 README。2026-09-26 第四批用户口径：「反馈邮箱统一为 feedback@weibaba.fun」，替换此前的 `feed@weibaba.fun`。
-- D15 产品中文名（用户口径 2026-09-26 第六批）：PassGone 中文名「密码滚蛋」、ForceSplit 中文名「庖丁解表」（此前卡片缺中文名，用户点名补齐）；ExifMate 暂无中文名，用户未提供前不编造。
+- D15 产品中文名（用户口径 2026-09-26 第六批）：PassGone 中文名「密码滚蛋」、ForceSplit 中文名「庖丁解表」（此前卡片缺中文名，用户点名补齐）；ExifMate 暂无中文名，用户未提供前不编造。2026-09-29 补充：LANsider 中文名「局内人」（替换卡片初版临时文案「局域网聊天」）。
 - D10 请作者喝咖啡（用户口径）：收款码取自 justforshow 官网仓 `assets/img/donate_qr.jpg`（与 passgone 官网仓同图）。**弹出式**（用户口径 2026-09-26：不要直接展示，点击弹出图片）：交互参照 PassGone 样式（跳动咖啡按钮 + 点击弹收款码 + 遮罩/✕ 关闭），但以纯 CSS `:target` 弹层实现（`#qr-modal`），保持本仓「无 JavaScript」红线与 CSP 不变；`prefers-reduced-motion` 时停用跳动动画。GitHub README 内无法弹层，仍直接展示收款码。
 - D11 视觉素材（用户提供）：`weblogo.jpg` 为站点徽标源图（1024×1024 白底圆形徽章 + Weibaba Zhang SoftWare 字样，源图存 `tools/src/`），favicon / apple-touch-icon / logo.png / og.png 全部由 `tools/make_icons.py` 从其派生（取徽章区域，禁止手改图片）；`weibaba_face.jpg` 为作者头像（油画风格双人像，含画框，完整展示、不做裁切）。
 - D12 关于作者文案（用户口径扩写）：中文「这些软件都出自个人爱好。开发初衷很简单：日常里经常遇到的小需求，顺手把它们做成小工具。希望它们也能帮到你。」；英文对应翻译。
@@ -49,3 +49,4 @@
 - v1.5.0（2026-09-26）：新增 ChronoMark（刻度，开发中）与 LANsider（局域网聊天，测试中）两张富卡片（用户口径第五批），功能特点取自各自应用仓 README，logo 分别取其 `store/ico/app_icon.png` 与主站暂代设计（见 D3/D14）；新增「测试中」徽章样式；README 产品表与 meta 描述同步（列入产品增至九款）。
 - v1.5.1（2026-09-26）：LANsider logo 更换为用户提供、置于其应用仓项目根的正式图标 `app-logo.png`（替换 v1.5.0 主站暂代设计，见 D3）。
 - v1.5.2（2026-09-26）：补齐产品中文名——PassGone「密码滚蛋」、ForceSplit「庖丁解表」（用户口径，见 D15）；中英两页卡片与 README 双语产品表同步。
+- v1.5.3（2026-09-29）：LANsider 中文名定为「局内人」（用户口径，见 D15）；中英两页卡片与 README 双语产品表同步。
