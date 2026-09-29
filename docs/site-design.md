@@ -28,7 +28,7 @@
 - D11 视觉素材（用户提供）：`weblogo.jpg` 为站点徽标源图（1024×1024 白底圆形徽章 + Weibaba Zhang SoftWare 字样，源图存 `tools/src/`），favicon / apple-touch-icon / logo.png / og.png 全部由 `tools/make_icons.py` 从其派生（取徽章区域，禁止手改图片）；`weibaba_face.jpg` 为作者头像（油画风格双人像，含画框，完整展示、不做裁切）。
 - D12 关于作者文案（用户口径扩写）：中文「这些软件都出自个人爱好。开发初衷很简单：日常里经常遇到的小需求，顺手把它们做成小工具。希望它们也能帮到你。」；英文对应翻译。
 - D13 产品链接（用户口径 2026-09-26 第三批，覆盖各官网仓 canonical）：统一使用 `https://<项目名小写>.weibaba.fun`——JustForShow、PassGone（`passgone.weibaba.fun`，忽略其官网仓旧 canonical `passgone.exifmate.com`）、PrivaMask、ExifMate（`exifmate.weibaba.fun`，忽略旧 canonical `exifmate.com`）、ForceSplit、SourceLens；FinFlowScope 开发中暂不外链。
-- D14 产品卡片信息结构（用户口径）：每款产品展示 **Logo + 英文名 + 中文名 + 干什么的（定位）+ 功能特点列表 + 官网链接**。产品 logo 入仓 `assets/img/products/<项目名小写>.png`，来源为各应用仓 `store/ico/app_icon.png` 源图标（ExifMate 用其官网仓 `assets/img/logo.png`，其应用仓不在本机；FinFlowScope 用其 `logo/app-logo-512x512.png` 唯一设计源头；LANsider 为主站暂代设计，见 D3）；功能特点为各仓权威清单的节选翻译对照，逐款来源见 D3。状态徽章三档：已发布（badge-ok，外链官网）/ 开发中（badge-dev）/ 测试中（badge-test）；开发中与测试中产品暂无官网链接。
+- D14 产品卡片信息结构（用户口径）：每款产品展示 **Logo + 英文名 + 中文名 + 干什么的（定位）+ 功能特点列表 + 官网链接**。产品 logo 入仓 `assets/img/products/<项目名小写>.png`，来源为各应用仓 `store/ico/app_icon.png` 源图标（ExifMate 用其官网仓 `assets/img/logo.png`，其应用仓不在本机；FinFlowScope 用其 `logo/app-logo-512x512.png` 唯一设计源头；ForceSplit 用其官网 `https://forcesplit.weibaba.fun/assets/img/logo.png` 权威版——应用仓 `app_icon.png` 带深蓝底边非成品裁切，2026-09-29 用户指出后更换；LANsider 用其项目根 `app-logo.png`，见 D3）；功能特点为各仓权威清单的节选翻译对照，逐款来源见 D3。状态徽章三档：已发布（badge-ok，外链官网）/ 开发中（badge-dev）/ 测试中（badge-test）；开发中与测试中产品暂无官网链接。
 
 ## 待办与后续
 
@@ -50,3 +50,4 @@
 - v1.5.1（2026-09-26）：LANsider logo 更换为用户提供、置于其应用仓项目根的正式图标 `app-logo.png`（替换 v1.5.0 主站暂代设计，见 D3）。
 - v1.5.2（2026-09-26）：补齐产品中文名——PassGone「密码滚蛋」、ForceSplit「庖丁解表」（用户口径，见 D15）；中英两页卡片与 README 双语产品表同步。
 - v1.5.3（2026-09-29）：LANsider 中文名定为「局内人」（用户口径，见 D15）；中英两页卡片与 README 双语产品表同步。
+- v1.5.4（2026-09-29）：ForceSplit 卡片图标更换为其官网权威 logo（`forcesplit.weibaba.fun` 的 `assets/img/logo.png`；应用仓 `app_icon.png` 带深蓝底边、观感错误，用户指出后更换，见 D14）。
